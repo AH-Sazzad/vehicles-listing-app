@@ -1,0 +1,84 @@
+/* TOPBAR */
+    .topbar{position:sticky;top:0;z-index:100;background:rgba(9,9,9,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);padding:14px 32px;display:flex;align-items:center;gap:12px;}
+    .topbar-back{display:flex;align-items:center;gap:6px;color:var(--muted);text-decoration:none;font-size:13px;transition:color .18s;}
+    .topbar-back:hover{color:var(--gold);}
+    .topbar-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;flex:1;}
+    .btn-gold{background:var(--gold);color:#090909;border:none;padding:8px 18px;border-radius:8px;font-size:13px;font-weight:600;font-family:'Outfit',sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:opacity .2s;}
+    .btn-gold:hover{opacity:.85;color:#090909;}
+    .btn-outline{background:transparent;border:1px solid var(--border);color:var(--muted);padding:8px 16px;border-radius:8px;font-size:13px;font-weight:500;font-family:'Outfit',sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:all .18s;}
+    .btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+
+    /* CONTENT */
+    .content{padding:28px 32px;}
+
+    /* GALLERY */
+    .gallery-main{border-radius:12px;overflow:hidden;height:420px;position:relative;background:var(--s2);}
+    .gallery-main img{width:100%;height:100%;object-fit:cover;}
+    .gallery-status{position:absolute;top:16px;left:16px;display:flex;gap:8px;}
+    .g-badge{padding:4px 12px;border-radius:5px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+    .g-badge-new{background:var(--gold);color:#090909;}
+    .g-badge-featured{background:rgba(201,168,76,.9);color:#090909;}
+    .gallery-fav{position:absolute;top:16px;right:16px;width:38px;height:38px;background:rgba(9,9,9,.7);backdrop-filter:blur(8px);border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--red);}
+    .gallery-views{position:absolute;bottom:16px;right:16px;background:rgba(9,9,9,.75);backdrop-filter:blur(6px);border:1px solid var(--border);border-radius:6px;padding:5px 11px;font-size:12px;color:var(--muted);display:flex;align-items:center;gap:5px;}
+    .thumb-row{display:flex;gap:10px;margin-top:12px;}
+    .thumb{flex:1;height:82px;border-radius:8px;overflow:hidden;border:2px solid transparent;cursor:pointer;transition:border-color .18s;}
+    .thumb:hover{border-color:var(--gold-border);}
+    .thumb.active{border-color:var(--gold);}
+    .thumb img{width:100%;height:100%;object-fit:cover;}
+
+    /* INFO PANEL */
+    .info-panel{background:var(--s1);border:1px solid var(--border);border-radius:12px;padding:24px;}
+
+    /* Header */
+    .car-brand-label{font-size:10px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;}
+    .car-main-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;line-height:1.2;margin-bottom:6px;}
+    .car-slug{font-size:11px;color:var(--muted);margin-bottom:14px;font-family:monospace;}
+    .status-pill{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;background:rgba(78,203,161,.12);color:var(--green);border:1px solid rgba(78,203,161,.25);margin-bottom:16px;}
+    .status-pill-red{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;background:rgba(78,203,161,.12);color:var(--red);border:1px solid rgba(78,203,161,.25);margin-bottom:16px;}
+    .price-display{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:var(--gold);margin-bottom:20px;}
+    .price-display small{font-size:14px;font-family:'Outfit',sans-serif;color:var(--muted);font-weight:400;}
+
+    /* Spec Grid */
+    .spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;}
+    .spec-block{background:var(--s2);border:1px solid var(--border);border-radius:8px;padding:11px 13px;display:flex;align-items:center;gap:10px;}
+    .spec-block i{font-size:17px;color:var(--gold);flex-shrink:0;}
+    .spec-block .sb-label{font-size:9px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;}
+    .spec-block .sb-value{font-size:13px;font-weight:600;margin-top:2px;}
+
+    /* Description */
+    .section-label{font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:10px;}
+    .desc-text{font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:20px;}
+
+    /* Seller card */
+    .seller-card{background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:16px;}
+    .seller-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#7A5C10);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#090909;}
+    .seller-name{font-size:14px;font-weight:600;}
+    .seller-role{font-size:11px;color:var(--muted);}
+    .seller-location{font-size:11px;color:var(--muted);margin-top:8px;display:flex;align-items:center;gap:4px;}
+
+    /* Action buttons */
+    .action-stack{display:flex;flex-direction:column;gap:8px;margin-top:18px;}
+    .btn-full{width:100%;padding:11px;border-radius:9px;font-size:14px;font-weight:600;font-family:'Outfit',sans-serif;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:all .18s;}
+    .btn-full-gold{background:var(--gold);color:#090909;}
+    .btn-full-gold:hover{opacity:.85;color:#090909;}
+    .btn-full-outline{background:transparent;border:1px solid var(--border);color:var(--text);}
+    .btn-full-outline:hover{border-color:var(--gold);color:var(--gold);}
+    .btn-full-outline-red{background:transparent;border:1px solid var(--border);color:var(--muted);}
+    .btn-full-outline-red:hover{border-color:var(--red);color:var(--red);}
+
+    /* SIMILAR CARS */
+    .similar-section{margin-top:36px;}
+    .section-heading{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:18px;}
+    .mini-card{background:var(--s1);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;gap:0;transition:border-color .2s;}
+    .mini-card:hover{border-color:var(--gold-border);}
+    .mini-img{width:120px;flex-shrink:0;}
+    .mini-img img{width:100%;height:100%;object-fit:cover;}
+    .mini-body{padding:12px 14px;flex:1;}
+    .mini-brand{font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;}
+    .mini-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;margin:3px 0 6px;}
+    .mini-specs{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
+    .mini-price{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold);}
+
+    ::-webkit-scrollbar{width:5px;}
+    ::-webkit-scrollbar-track{background:var(--s1);}
+    ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
